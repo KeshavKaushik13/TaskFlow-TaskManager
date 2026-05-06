@@ -41,7 +41,7 @@ export default function Signup() {
               <input
                 type="text"
                 className="input"
-                placeholder="Keshav Kaushik"
+                placeholder="Your Name"
                 value={form.name}
                 onChange={e => setForm({ ...form, name: e.target.value })}
                 required
