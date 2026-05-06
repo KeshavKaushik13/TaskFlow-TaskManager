@@ -2,8 +2,11 @@
 
 A full-stack web application for managing projects and tasks with role-based access control (Admin/Member).
 
-**Live Demo:** [your-frontend.vercel.app](https://your-frontend.vercel.app)  
-**Backend API:** [your-backend.railway.app](https://your-backend.railway.app)
+**Live Demo:**  
+https://task-flow-task-manager-seven.vercel.app/login
+
+**Backend API:**  
+https://taskflow-taskmanager-production.up.railway.app/
 
 ---
 
@@ -124,16 +127,15 @@ npm run dev            # runs on http://localhost:5173
    - `FRONTEND_URL` – your frontend Railway URL (update after Step 2)
 5. Railway auto-detects `npm start` — copy your backend URL once deployed
 
-### Step 2 — Deploy Frontend on Railway
+### Step 2 — Deploy Frontend on Vercel
 
-1. In the same Railway project → **New Service** → GitHub repo
-2. Set **Root Directory** → `frontend`
-3. Set **Build Command** → `npm run build`
-4. Set **Start Command** → `npx serve -s dist -l 3000`
-5. Add environment variables:
+1. Go to [vercel.com](https://vercel.com) → Login with GitHub → **New Project**
+2. Import your GitHub repo
+3. Set **Root Directory** → `frontend`
+4. Framework preset auto-detects as **Vite**
+5. Add environment variable:
    - `VITE_API_URL` – your Railway backend URL + `/api`
-   - `PORT` – `3000`
-6. Deploy — copy your frontend URL
+6. Click **Deploy** — copy your Vercel URL
 
 ### Step 3 — Update Backend CORS
 
@@ -164,4 +166,4 @@ VITE_API_URL=https://your-backend.railway.app/api
 ## Author
 
 **Keshav Kaushik**  
-[GitHub](https://github.com/KeshavKaushik13) · [LinkedIn](https://linkedin.com/in/yourprofile)
+
